@@ -1,5 +1,14 @@
 
 sudo: false
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $CI_TOKEN
+  keep-history: true
+  allow-empty-commit: false
+  target-branch: gh-pages
+  on:
+    branch: master
 
 language: node_js
 
@@ -12,4 +21,3 @@ before_script:
 
 script:
 - yarn run build
-- yarn run deploy
