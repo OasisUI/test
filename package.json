@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "bisheng gh-pages --push-only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OasisUI/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OasisUI/test/issues"
+  },
+  "homepage": "https://github.com/OasisUI/test#readme",
+  "description": "",
+  "devDependencies": {
+    "bisheng": "^0.28.3",
+    "yarn": "^1.6.0"
+  }
+}

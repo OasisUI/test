@@ -1,0 +1,15 @@
+
+sudo: false
+
+language: node_js
+
+node_js:
+  - 8
+
+before_script:
+- npm install yarn -g
+- yarn | npm install
+
+script:
+- yarn run build
+- yarn run deploy
