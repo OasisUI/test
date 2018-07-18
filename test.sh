@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-git config user.name "OasisCI"
-
 echo 'TEST_VALUE:' $TEST_VALUE;
 rm -rf web CI-IN-ACTION
 mkdir web
