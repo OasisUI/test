@@ -7,7 +7,7 @@ deploy:
   allow-empty-commit: false
   target-branch: gh-pages
   on:
-    branch: master
+    branch: dev
 
 language: node_js
 
