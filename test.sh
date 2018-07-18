@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-$VERSION = $(npm version patch)
+VERSION=$(npm version patch)
 
 echo 'TEST_VALUE:' $TEST_VALUE;
 echo 'VERSION:' $VERSION;
