@@ -1,14 +1,16 @@
 #!/usr/bin/env sh
-
-VERSION=$(npm version patch)
-
-echo 'TEST_VALUE:' $TEST_VALUE;
-echo 'VERSION:' $VERSION;
+echo 'print package version:'
+npm version patch
 
 rm -rf web CI-IN-ACTION
 mkdir web
 cd web
 git clone -b master https://$CI_TOKEN@github.com/joe223/CI-IN-ACTION.git .
+VERSION=$(npm version patch)
+
+echo 'TEST_VALUE:' $TEST_VALUE;
+echo 'VERSION:' $VERSION;
+
 npm run build
 
 cd ..
