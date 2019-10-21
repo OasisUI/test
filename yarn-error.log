@@ -1,0 +1,68 @@
+Arguments: 
+  /Users/hezaichang/.nvm/versions/node/v10.15.3/bin/node /Users/hezaichang/.nvm/versions/node/v10.15.3/bin/yarn
+
+PATH: 
+  /Users/hezaichang/.nvm/versions/node/v10.15.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/hezaichang/flutter_sdk/flutter/bin:/Users/hezaichang/Library/Android/sdk/platform-tools:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/hezaichang/git/ci-in-action/package.json: Unexpected token } in JSON at position 1007
+      at JSON.parse (<anonymous>)
+      at /Users/hezaichang/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/hezaichang/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/hezaichang/.nvm/versions/node/v10.15.3/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "test",
+    "version": "1.0.8",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/OasisUI/test.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/OasisUI/test/issues"
+    },
+    "homepage": "https://github.com/OasisUI/test#readme",
+    "description": "",
+    "scripts": {
+      "dev": "cross-env NODE_ENV=development rollup -wc",
+      "build": "cross-env NODE_ENV=production rollup -c",
+      "test": "nyc mocha test/setup.js test/**/*.spec.js",
+      "coverage": "nyc report && codecov"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.6.4",
+      "@babel/preset-env": "^7.6.3",
+      "codecov": "^3.6.1",
+      "expect": "^24.9.0",
+      "finalhandler": "^1.1.2",
+      "husky": "^3.0.9",
+      "mocha": "^6.2.2",
+      "nyc": "^14.1.1",
+      "puppeteer": "^1.20.0",
+      "puppeteer-to-istanbul": "^1.2.2",
+      "rollup": "^1.23.1",
+      "rollup-plugin-babel": "^4.3.3",
+      "rollup-plugin-uglify": "^6.0.3",
+      "serve-static": "^1.14.1"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
